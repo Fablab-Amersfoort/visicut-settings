@@ -1,0 +1,29 @@
+<laserDevice>
+  <jobSentText>Job was sent as &apos;$jobname&apos;
+Please:
+-Close the lid
+-Turn on the Ventilation
+-And press &apos;start&apos; on the Lasercutter $name</jobSentText>
+  <jobPrefix>visicut </jobPrefix>
+  <laserCutter class="com.t_oster.liblasercut.drivers.LaosCutter">
+    <supportsFrequency>false</supportsFrequency>
+    <supportsFocus>false</supportsFocus>
+    <supportsPurge>false</supportsPurge>
+    <supportsVentilation>false</supportsVentilation>
+    <debugFilename></debugFilename>
+    <addSpacePerRasterLine>20.0</addSpacePerRasterLine>
+    <useTftp>true</useTftp>
+    <flipXaxis>false</flipXaxis>
+    <flipYaxis>true</flipYaxis>
+    <hostname>10.0.0.105</hostname>
+    <port>69</port>
+    <mmPerStep>0.0010</mmPerStep>
+    <currentPower>-1.0</currentPower>
+    <currentSpeed>-1.0</currentSpeed>
+    <currentFrequency>-1</currentFrequency>
+    <currentFocus>0.0</currentFocus>
+    <bedWidth>320.0</bedWidth>
+    <bedHeight>240.0</bedHeight>
+  </laserCutter>
+  <name>NutBoltLaser</name>
+</laserDevice>

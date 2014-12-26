@@ -1,0 +1,26 @@
+<laserDevice>
+  <jobSentText>Job was sent. Press the joystick on the lasercutter.</jobSentText>
+  <jobPrefix>visicut </jobPrefix>
+  <laserCutter class="com.t_oster.liblasercut.drivers.LaosCutter">
+    <supportsFrequency>false</supportsFrequency>
+    <supportsFocus>false</supportsFocus>
+    <supportsPurge>false</supportsPurge>
+    <supportsVentilation>false</supportsVentilation>
+    <debugFilename></debugFilename>
+    <addSpacePerRasterLine>5.0</addSpacePerRasterLine>
+    <useTftp>true</useTftp>
+    <flipXaxis>false</flipXaxis>
+    <flipYaxis>true</flipYaxis>
+    <hostname>10.0.0.14</hostname>
+    <port>69</port>
+    <mmPerStep>0.0010</mmPerStep>
+    <currentPower>-1.0</currentPower>
+    <currentSpeed>-1.0</currentSpeed>
+    <currentFrequency>-1</currentFrequency>
+    <currentFocus>0.0</currentFocus>
+    <bedWidth>370.0</bedWidth>
+    <bedHeight>235.0</bedHeight>
+  </laserCutter>
+  <thumbnailPath>Small_32_lasercutter.png</thumbnailPath>
+  <name>Small lasercutter</name>
+</laserDevice>

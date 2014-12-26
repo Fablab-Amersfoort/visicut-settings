@@ -1,0 +1,28 @@
+<visicutPreferences>
+  <defaultMapping>Cut red, engrave black and bitmaps, mark blue</defaultMapping>
+  <disableSandbox>false</disableSandbox>
+  <useFilenamesForJobs>false</useFilenamesForJobs>
+  <windowBounds>
+    <x>1</x>
+    <y>22</y>
+    <width>1202</width>
+    <height>938</height>
+  </windowBounds>
+  <useThicknessAsFocusOffset>false</useThicknessAsFocusOffset>
+  <recentFiles>
+    <string>/Users/Peter/.visicut/examples/block.svg</string>
+    <string>/Users/Peter/.visicut/examples/testpattern reruns.ls</string>
+    <string>/Users/Peter/Projects/Fablab/frees/endstop plate export.svg</string>
+    <string>/Users/Peter/Projects/Fablab/frees/endstop plate.svg</string>
+    <string>/Users/Peter/Desktop/testpattern reruns.ls</string>
+  </recentFiles>
+  <lastMaterial>Basis materiaal</lastMaterial>
+  <lastLaserDevice>Big lasercutter</lastLaserDevice>
+  <availableImporters>
+    <string>com.t_oster.visicut.model.graphicelements.svgsupport.SVGImporter</string>
+    <string>com.t_oster.visicut.model.graphicelements.jpgpngsupport.JPGPNGImporter</string>
+    <string>com.t_oster.visicut.model.graphicelements.dxfsupport.DXFImporter</string>
+    <string>com.t_oster.visicut.model.graphicelements.epssupport.EPSImporter</string>
+  </availableImporters>
+  <editSettingsBeforeExecuting>false</editSettingsBeforeExecuting>
+</visicutPreferences>
