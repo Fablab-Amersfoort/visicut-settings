@@ -2,11 +2,11 @@ var rectangleWidth 	= 3;
 var rectangleHeight = 3;
 var space 			= 1;
 var numX			= 10;
-var numY			= 1;
-var startPower 		= 0.01;
-var endPower 		= 35;
-var startSpeed 		= 100;
-var endSpeed 		= 100;
+var numY			= 10;
+var startPower 		= 10;
+var endPower 		= 1;
+var startSpeed 		= 10;
+var endSpeed 		= 1;
 
 var speedStep	 	= (endSpeed-startSpeed)/(numY-1); // speed over y-axis
 var powerStep 		= (endPower-startPower)/(numX-1); // power over x-axis
@@ -15,7 +15,12 @@ echo('This is a test pattern writen in Laserscript. More info:');
 echo('https://github.com/t-oster/VisiCut/wiki/LaserScript. ');
 for (var i = 0; i < numY; i++)
 {
-	var speed = (numY == 1)? startSpeed : startSpeed+i*speedStep;
+	var perc = (numY == 1)? 0 : i/(numY-1);
+	// alter percentage so that the you get sligthly more results towards the endSpeed 
+	// (default slower region)
+	// because slower region is usually more interesting
+	perc = quadEaseOut(perc,1);
+	var speed = startSpeed+(endSpeed-startSpeed)*perc;
 	set("speed", speed);
 	var echoRow = "";
 	for (var j = 0; j < numX; j++)
@@ -26,7 +31,7 @@ for (var i = 0; i < numY; i++)
 		var y = (rectangleHeight+space)*i;
 		rectangle(x, y, rectangleWidth, rectangleHeight);
 
-		echoRow += '['+leadingZeros(Math.round(power),3)+'|'+leadingZeros(Math.round(speed),3)+']  ';
+		echoRow += '['+leadingZeros(Math.round(power*100)/100,3)+'|'+leadingZeros(Math.round(speed*100)/100,3)+']  ';
 	}
 	echo(echoRow);
 }
@@ -55,4 +60,7 @@ function leadingZeros(value, numZeros) {
     var s = value+"";
     while (s.length < numZeros) s = "0" + s;
     return s;
+}
+function quadEaseOut (input, total) {
+  return -total *(input/=total)*(input-2);
 }
