@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<laserDevice version="0">
+  <originBottomLeft>false</originBottomLeft>
+  <jobSentText>Job was sent as '$jobname'
+Please:
+-Close the lid
+-And press 'start-pause' on the Big Lasercutter on the bottom right panel.</jobSentText>
+  <jobPrefix>visicut </jobPrefix>
+  <laserCutter class="de.thomas_oster.liblasercut.drivers.SmoothieBoard">
+    <lineend>CRLF</lineend>
+    <baudRate>115200</baudRate>
+    <flipXaxis>false</flipXaxis>
+    <flipYaxis>false</flipYaxis>
+    <httpUploadUrl>http://10.0.0.17/upload</httpUploadUrl>
+    <autoPlay>false</autoPlay>
+    <postHttpUploadGcode>M23 $filename</postHttpUploadGcode>
+    <supportedResolutions>100,200,500,1000</supportedResolutions>
+    <waitForOKafterEachLine>true</waitForOKafterEachLine>
+    <preJobGcode>G21,G90,M3</preJobGcode>
+    <postJobGcode>G0 X0 Y0,M5</postJobGcode>
+    <serialTimeout>15000</serialTimeout>
+    <exportPath></exportPath>
+    <uploadMethod>HTTP</uploadMethod>
+    <identificationLine>Smoothie</identificationLine>
+    <initDelay>0</initDelay>
+    <host>10.0.0.17</host>
+    <comport>auto</comport>
+    <max__speed>30000.0</max__speed>
+    <travel__speed>30000.0</travel__speed>
+    <blankLaserDuringRapids>false</blankLaserDuringRapids>
+    <useBidirectionalRastering>true</useBidirectionalRastering>
+    <spindleMax>1.0</spindleMax>
+    <currentPower>-1.0</currentPower>
+    <currentSpeed>-1.0</currentSpeed>
+    <nextPower>-1.0</nextPower>
+    <nextSpeed>-1.0</nextSpeed>
+    <currentFocus>0.0</currentFocus>
+    <bedWidth>480.0</bedWidth>
+    <bedHeight>320.0</bedHeight>
+    <rasterPadding>5.0</rasterPadding>
+  </laserCutter>
+  <cameraTiming>0</cameraTiming>
+  <projectorTiming>0</projectorTiming>
+  <projectorWidth>0</projectorWidth>
+  <projectorHeight>0</projectorHeight>
+  <thumbnailPath>Big_32_lasercutter_32_smoothieboard.png</thumbnailPath>
+  <name>Big lasercutter smoothieboard</name>
+</laserDevice>
