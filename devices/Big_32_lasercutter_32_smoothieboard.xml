@@ -12,7 +12,7 @@ Please:
     <baudRate>115200</baudRate>
     <flipXaxis>false</flipXaxis>
     <flipYaxis>false</flipYaxis>
-    <httpUploadUrl>http://10.0.0.17/upload</httpUploadUrl>
+    <httpUploadUrl>http://10.103.0.10/upload</httpUploadUrl>
     <autoPlay>false</autoPlay>
     <postHttpUploadGcode>M23 $filename</postHttpUploadGcode>
     <supportedResolutions>100,200,500,1000</supportedResolutions>
@@ -24,7 +24,7 @@ Please:
     <uploadMethod>HTTP</uploadMethod>
     <identificationLine>Smoothie</identificationLine>
     <initDelay>0</initDelay>
-    <host>10.0.0.17</host>
+    <host>10.103.0.10</host>
     <comport>auto</comport>
     <max__speed>30000.0</max__speed>
     <travel__speed>30000.0</travel__speed>
