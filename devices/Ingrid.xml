@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<laserDevice version="0">
+  <originBottomLeft>false</originBottomLeft>
+  <jobSentText>Job was sent as '$jobname'
+Please:
+-Close the lid
+-Turn on the Ventilation
+-And press 'start' on the Lasercutter $name</jobSentText>
+  <jobPrefix>visicut </jobPrefix>
+  <laserCutter class="de.thomas_oster.liblasercut.drivers.GenericGcodeDriver">
+    <lineend>LF</lineend>
+    <baudRate>115200</baudRate>
+    <flipXaxis>false</flipXaxis>
+    <flipYaxis>true</flipYaxis>
+    <httpUploadUrl>http://10.103.0.15/sdfiles</httpUploadUrl>
+    <autoPlay>false</autoPlay>
+    <postHttpUploadGcode></postHttpUploadGcode>
+    <supportedResolutions>100,500,1000</supportedResolutions>
+    <waitForOKafterEachLine>false</waitForOKafterEachLine>
+    <preJobGcode>G21,G90,M4,G10L2P0X-880Y-580</preJobGcode>
+    <postJobGcode>M5,G0X870Y570</postJobGcode>
+    <serialTimeout>15000</serialTimeout>
+    <exportPath></exportPath>
+    <uploadMethod>grblHAL</uploadMethod>
+    <identificationLine>Grbl</identificationLine>
+    <initDelay>5</initDelay>
+    <host></host>
+    <comport>auto</comport>
+    <max__speed>1200.0</max__speed>
+    <travel__speed>3600.0</travel__speed>
+    <blankLaserDuringRapids>false</blankLaserDuringRapids>
+    <useBidirectionalRastering>false</useBidirectionalRastering>
+    <spindleMax>80.0</spindleMax>
+    <currentPower>-1.0</currentPower>
+    <currentSpeed>-1.0</currentSpeed>
+    <nextPower>-1.0</nextPower>
+    <nextSpeed>-1.0</nextSpeed>
+    <currentFocus>0.0</currentFocus>
+    <bedWidth>880.0</bedWidth>
+    <bedHeight>580.0</bedHeight>
+    <rasterPadding>5.0</rasterPadding>
+    <rasterPaddingAllowOutsideMachineSpace>false</rasterPaddingAllowOutsideMachineSpace>
+    <apiKey></apiKey>
+    <gCodeDigits>6</gCodeDigits>
+    <sCodeDigits>3</sCodeDigits>
+    <staticJobName>visicut.gcode</staticJobName>
+  </laserCutter>
+  <cameraTiming>0</cameraTiming>
+  <projectorTiming>0</projectorTiming>
+  <projectorWidth>0</projectorWidth>
+  <projectorHeight>0</projectorHeight>
+  <name>Ingrid</name>
+</laserDevice>
