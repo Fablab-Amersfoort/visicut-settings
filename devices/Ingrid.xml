@@ -27,8 +27,8 @@ Please:
     <initDelay>5</initDelay>
     <host></host>
     <comport>auto</comport>
-    <max__speed>1200.0</max__speed>
-    <travel__speed>3600.0</travel__speed>
+    <max__speed>48000.0</max__speed>
+    <travel__speed>48000.0</travel__speed>
     <blankLaserDuringRapids>false</blankLaserDuringRapids>
     <useBidirectionalRastering>false</useBidirectionalRastering>
     <spindleMax>80.0</spindleMax>
@@ -50,5 +50,6 @@ Please:
   <projectorTiming>0</projectorTiming>
   <projectorWidth>0</projectorWidth>
   <projectorHeight>0</projectorHeight>
+  <thumbnailPath>Ingrid.png</thumbnailPath>
   <name>Ingrid</name>
 </laserDevice>
