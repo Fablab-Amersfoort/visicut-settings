@@ -18,8 +18,8 @@ Please:
     <postHttpUploadGcode></postHttpUploadGcode>
     <supportedResolutions>100,500,1000</supportedResolutions>
     <waitForOKafterEachLine>false</waitForOKafterEachLine>
-    <preJobGcode>G21,G90,M4,G10L2P0X-880Y-580</preJobGcode>
-    <postJobGcode>M5,G0X870Y570</postJobGcode>
+    <preJobGcode>G21,G90,M4,G10 L2 P0 X-869 Y-580</preJobGcode>
+    <postJobGcode>M5,G0X859Y570</postJobGcode>
     <serialTimeout>15000</serialTimeout>
     <exportPath></exportPath>
     <uploadMethod>grblHAL</uploadMethod>
@@ -38,7 +38,7 @@ Please:
     <nextSpeed>-1.0</nextSpeed>
     <currentFocus>0.0</currentFocus>
     <bedWidth>880.0</bedWidth>
-    <bedHeight>580.0</bedHeight>
+    <bedHeight>544.0</bedHeight>
     <rasterPadding>5.0</rasterPadding>
     <rasterPaddingAllowOutsideMachineSpace>false</rasterPaddingAllowOutsideMachineSpace>
     <apiKey></apiKey>
