@@ -19,7 +19,7 @@ Please:
     <supportedResolutions>100,500,1000</supportedResolutions>
     <waitForOKafterEachLine>false</waitForOKafterEachLine>
     <preJobGcode>G21,G90,M4,G10 L2 P0 X-869 Y-580</preJobGcode>
-    <postJobGcode>M5,G0X859Y570</postJobGcode>
+    <postJobGcode>M5,G53 G0X-10Y-10</postJobGcode>
     <serialTimeout>15000</serialTimeout>
     <exportPath></exportPath>
     <uploadMethod>grblHAL</uploadMethod>
@@ -47,9 +47,6 @@ Please:
     <staticJobName>visicut.gcode</staticJobName>
   </laserCutter>
   <cameraTiming>0</cameraTiming>
-  <projectorTiming>0</projectorTiming>
-  <projectorWidth>0</projectorWidth>
-  <projectorHeight>0</projectorHeight>
   <thumbnailPath>Ingrid.png</thumbnailPath>
   <name>Ingrid</name>
 </laserDevice>
