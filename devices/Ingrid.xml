@@ -31,7 +31,7 @@ Please:
     <travel__speed>48000.0</travel__speed>
     <blankLaserDuringRapids>false</blankLaserDuringRapids>
     <useBidirectionalRastering>false</useBidirectionalRastering>
-    <spindleMax>80.0</spindleMax>
+    <spindleMax>100.0</spindleMax>
     <currentPower>-1.0</currentPower>
     <currentSpeed>-1.0</currentSpeed>
     <nextPower>-1.0</nextPower>
