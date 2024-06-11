@@ -16,7 +16,7 @@ Please:
     <httpUploadUrl>http://10.103.0.15/sdfiles</httpUploadUrl>
     <autoPlay>false</autoPlay>
     <postHttpUploadGcode></postHttpUploadGcode>
-    <supportedResolutions>100,500,1000</supportedResolutions>
+    <supportedResolutions>100,200,500,1000</supportedResolutions>
     <waitForOKafterEachLine>false</waitForOKafterEachLine>
     <preJobGcode>G21,G90,M4,G10 L2 P0 X-869 Y-580</preJobGcode>
     <postJobGcode>M5,G53 G0X-10Y-10</postJobGcode>
